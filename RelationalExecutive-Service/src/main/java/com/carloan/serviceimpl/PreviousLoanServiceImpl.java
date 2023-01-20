@@ -1,5 +1,7 @@
 package com.carloan.serviceimpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,5 +25,20 @@ public class PreviousLoanServiceImpl implements PreviousLoanService {
 		
 		return repo.findByPloanId(ploanId);
 	}
+
+	@Override
+	public List<PreviousLoan> getallpreviousloandetails() {
+		
+		return repo.findAll();
+	}
+
+	@Override
+	public List<PreviousLoan> deletebyid(int ploanId) {
+		repo.deleteById(ploanId);
+		return repo.findAll();
+		
+	}
+
+	
 
 }
