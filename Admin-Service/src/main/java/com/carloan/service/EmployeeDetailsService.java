@@ -7,11 +7,15 @@ import com.carloan.model.EmployeeDetails;
 public interface EmployeeDetailsService {
 
 	public EmployeeDetails addEmployee(EmployeeDetails employeeDetails);
+	
+	public EmployeeDetails getEmpById(int empid);
 
 	public List<EmployeeDetails> getEmpDetails();
 
 	public List<EmployeeDetails> deteleEmp(int empid);
 	
 	public EmployeeDetails updateEmpDetail(EmployeeDetails employeeDetails);
+	
+
 
 }

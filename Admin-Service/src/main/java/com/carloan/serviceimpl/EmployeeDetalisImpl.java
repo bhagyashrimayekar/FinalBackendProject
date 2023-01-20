@@ -38,4 +38,9 @@ public class EmployeeDetalisImpl implements EmployeeDetailsService {
 		return repo.save(employeeDetails);
 	}
 
+	@Override
+	public EmployeeDetails getEmpById(int empid) {
+		return repo.findById(empid).get();
+	}
+
 }

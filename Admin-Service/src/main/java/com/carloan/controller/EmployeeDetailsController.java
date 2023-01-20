@@ -41,6 +41,11 @@ public class EmployeeDetailsController {
 		return "Employee Deleted";
 	}
 	
+	@GetMapping("/getEmpById/{empid}")
+	public EmployeeDetails getEmpById(@PathVariable int empid) {
+		return serv.getEmpById(empid);
+	}
+	
 	@PutMapping("/updateEmpDetail")
 	public EmployeeDetails updateEmpDetails(@RequestBody EmployeeDetails employeeDetails) {
 		return serv.updateEmpDetail(employeeDetails);
