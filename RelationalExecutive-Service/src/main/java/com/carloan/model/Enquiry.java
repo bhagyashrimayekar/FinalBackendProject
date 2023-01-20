@@ -21,5 +21,9 @@ public class Enquiry {
 	private long mobileNo;
 	private  String pancardNo;
 	private long addharCardNo;
+	private String createDate;
+	private String modifyDate;
+	
+	
 
 }

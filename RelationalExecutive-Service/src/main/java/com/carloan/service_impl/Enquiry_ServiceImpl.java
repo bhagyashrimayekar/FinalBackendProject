@@ -28,7 +28,38 @@ public class Enquiry_ServiceImpl implements Enquiry_Interface{
 		return enquiries;
 	}
 
+	@Override
+	public List<Enquiry> GetAllEnquiryByDate(String createDate) {
+		
+		List<Enquiry> getenquirybydate=(List<Enquiry>) repo.findAllByCreateDate(createDate);
+		
+		return getenquirybydate;
+	}
+
+	@Override
+	public Enquiry getEnquiryById(int eid) {
+		return repo.findById(eid).get();
+	}
+
+	@Override
+	public Enquiry updateEnquiryById(Enquiry enquiry) {
+		return repo.save(enquiry);
+	}
+
+	@Override
+	public List<Enquiry> deteleEnquiriy(int eid) {
+		
+		repo.deleteById(eid);
+		return repo.findAll();
+	}
 	
+	
+	
+
+	/*
+	 * @Override public Enquiry updateEnquiry(Enquiry enquiry) { return
+	 * repo.save(enquiry); }
+	 */
 	
 	
 }
