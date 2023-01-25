@@ -22,10 +22,24 @@ public class Ledger {
 	private String nextEmiDateStart;
 	private String nextEmiDateEnd;
 	private int defaulterCount;
-	private String EmiStatus;
+	private String emiStatus;
     private String currentMonthEmiStatus;
     private String loanEndDate;
     private String loanStatus;
+    private String emailId;
+    
+	public String getEmailId() {
+		return emailId;
+	}
+	public String getEmiStatus() {
+		return emiStatus;
+	}
+	public void setEmiStatus(String emiStatus) {
+		this.emiStatus = emiStatus;
+	}
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
 	public int getLedgerId() {
 		return ledgerId;
 	}
@@ -92,12 +106,7 @@ public class Ledger {
 	public void setDefaulterCount(int defaulterCount) {
 		this.defaulterCount = defaulterCount;
 	}
-	public String getEmiStatus() {
-		return EmiStatus;
-	}
-	public void setEmiStatus(String emiStatus) {
-		EmiStatus = emiStatus;
-	}
+	
 	public String getCurrentMonthEmiStatus() {
 		return currentMonthEmiStatus;
 	}
