@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.carloan.model.PreviousLoan;
-import com.carloan.rpository.PreviousLoanRepository;
+import com.carloan.repository.PreviousLoanRepository;
 import com.carloan.service.PreviousLoanService;
 
 @Service

@@ -5,10 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-import com.carloan.docsupload.FileStorageProperties;
+
 
 @SpringBootApplication
-@EnableConfigurationProperties({ FileStorageProperties.class })
 @EnableEurekaClient
 public class RelationalExecutiveServiceApplication {
 
