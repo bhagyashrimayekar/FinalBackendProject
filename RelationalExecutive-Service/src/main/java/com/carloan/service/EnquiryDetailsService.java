@@ -11,5 +11,6 @@ public interface EnquiryDetailsService {
 	public List<EnquiryDetails> getAllEnquiryData();
 	
 	public List<EnquiryDetails> findAllByCreatedDate(String createdDate);
-
+    
+	public EnquiryDetails getenquirydetailsbyid(int eid);
 }

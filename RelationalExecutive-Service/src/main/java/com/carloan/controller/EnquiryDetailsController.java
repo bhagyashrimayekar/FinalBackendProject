@@ -38,4 +38,10 @@ public class EnquiryDetailsController {
 		List<EnquiryDetails> eList=service.findAllByCreatedDate(createdDate);
 		return eList;
 	}
+	
+	@GetMapping("/getenquirydetailsbyid/{eid}")
+	public EnquiryDetails findbyid(@PathVariable int eid) {
+		EnquiryDetails eList=service.getenquirydetailsbyid(eid);
+		return eList;
+	}
 }

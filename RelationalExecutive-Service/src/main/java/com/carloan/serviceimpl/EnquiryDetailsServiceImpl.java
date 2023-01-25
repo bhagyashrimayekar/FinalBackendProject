@@ -31,6 +31,12 @@ public class EnquiryDetailsServiceImpl implements EnquiryDetailsService{
 		List<EnquiryDetails> eList=repo.findAllByCreatedDate(createdDate);
 		return eList;
 	}
+
+	@Override
+	public EnquiryDetails getenquirydetailsbyid(int eid) {
+		
+		return repo.findById(eid).get();
+	}
 	
 
 }
