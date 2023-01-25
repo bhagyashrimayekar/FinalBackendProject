@@ -7,7 +7,7 @@ import org.springframework.dao.support.DaoSupport;
 import org.springframework.stereotype.Service;
 
 import com.carloan.model.LoanDetails;
-import com.carloan.rpository.LoanDetailsRepository;
+import com.carloan.repository.LoanDetailsRepository;
 import com.carloan.service.LoanDetailsService;
 
 @Service

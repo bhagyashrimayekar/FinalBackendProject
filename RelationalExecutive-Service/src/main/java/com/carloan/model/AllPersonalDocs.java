@@ -11,88 +11,78 @@ import javax.persistence.ManyToOne;
 public class AllPersonalDocs {
 
 	@Id
-	@GeneratedValue(strategy =GenerationType.IDENTITY)
-	public int dID;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	public int cid;
 	@Lob
-    public byte[] addressProof;
+	public byte[] panCard;
 	@Lob
-    public byte[] panCard;
+	public byte[] photo;
 	@Lob
-    public byte[] incomeTaxReturn;
+	public byte[] adharCard;
+
 	@Lob
-    public byte[] aadharCard;
+	public byte[] salarySlips;
+
 	@Lob
-    public byte[] photo;
+	public byte[] bankStatement;
+
 	@Lob
-    public byte[] signature;
-    //public byte thumb;
-	@Lob
-    public byte[] bankCheque;
-	@Lob
-    public byte[] salarySlip;
-    
-    public int getdID() {
-		return dID;
+	public byte[] addressProof;
+
+	public int getCid() {
+		return cid;
 	}
-	public void setdID(int dID) {
-		this.dID = dID;
+
+	public void setCid(int cid) {
+		this.cid = cid;
 	}
-	public byte[] getAddressProof() {
-		return addressProof;
-	}
-	public void setAddressProof(byte[] addressProof) {
-		this.addressProof = addressProof;
-	}
+
 	public byte[] getPanCard() {
 		return panCard;
 	}
+
 	public void setPanCard(byte[] panCard) {
 		this.panCard = panCard;
 	}
-	public byte[] getIncomeTaxReturn() {
-		return incomeTaxReturn;
-	}
-	public void setIncomeTaxReturn(byte[] incomeTaxReturn) {
-		this.incomeTaxReturn = incomeTaxReturn;
-	}
-	public byte[] getAadharCard() {
-		return aadharCard;
-	}
-	public void setAadharCard(byte[] aadharCard) {
-		this.aadharCard = aadharCard;
-	}
+
 	public byte[] getPhoto() {
 		return photo;
 	}
+
 	public void setPhoto(byte[] photo) {
 		this.photo = photo;
 	}
-	public byte[] getSignature() {
-		return signature;
+
+	public byte[] getAdharCard() {
+		return adharCard;
 	}
-	public void setSignature(byte[] signature) {
-		this.signature = signature;
+
+	public void setAdharCard(byte[] adharCard) {
+		this.adharCard = adharCard;
 	}
-	public byte[] getBankCheque() {
-		return bankCheque;
+
+	public byte[] getSalarySlips() {
+		return salarySlips;
 	}
-	public void setBankCheque(byte[] bankCheque) {
-		this.bankCheque = bankCheque;
+
+	public void setSalarySlips(byte[] salarySlips) {
+		this.salarySlips = salarySlips;
 	}
-	public byte[] getSalarySlip() {
-		return salarySlip;
+
+	public byte[] getBankStatement() {
+		return bankStatement;
 	}
-	public void setSalarySlip(byte[] salarySlip) {
-		this.salarySlip = salarySlip;
+
+	public void setBankStatement(byte[] bankStatement) {
+		this.bankStatement = bankStatement;
 	}
-	@ManyToOne
-    public CustomerDetails customerDetails;
-    
-	public CustomerDetails getCustomerDetails() {
-		return customerDetails;
+
+	public byte[] getAddressProof() {
+		return addressProof;
 	}
-	public void setCustomerDetails(CustomerDetails customerDetails) {
-		this.customerDetails = customerDetails;
+
+	public void setAddressProof(byte[] addressProof) {
+		this.addressProof = addressProof;
 	}
-	
+
 }
